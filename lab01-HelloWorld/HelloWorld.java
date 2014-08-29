@@ -8,7 +8,7 @@
 //  run the program
 //  java HelloWorld//
 
-//  define a class
+//define a class
 public class HelloWorld{
     
     //add main method
