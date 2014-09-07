@@ -1,10 +1,11 @@
-//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 //Nick Watanabe
 //hw02
 //Arithmetic Java Program
+    //~description of program~
     /*program to calculate total cost of buying goods
-    at a store, including PA sales tax of 6%, """""with the
-    final output value rounded to the nearest hundredth"""""*/
+    at a store, including the PA sales tax of 6%, with the
+    final output value & sales tax rounded to the nearest hundredth*/
 //
 
 
@@ -33,7 +34,7 @@ public class Arithmetic{
         
     
         //total cost of socks
-        double totalSockCost$=nSocks*sockCost$;  //delete this!! do we put $ after Costs????
+        double totalSockCost$=nSocks*sockCost$;  
         //total cost of drinking glasses
         double totalGlassCost$=nGlasses*glassCost$;
         //total cost of boxes of envelopes
@@ -63,12 +64,13 @@ public class Arithmetic{
         System.out.println("The number of glasses bought is "+nGlasses+" @ $"+glassCost$+".");
         System.out.println("The number of boxes of envelopes bought is "+nEnvelopes+" @ $"+envelopesCost$+".");
         System.out.println("The subtotal is $"+subtotal$+".");
-        System.out.println("The sales tax due is $"+SalesTaxFinal$+/*+sales_tax_casting$+*/".");
-        System.out.println("The grand total is $"/*+grandTotal_variableConversion$+*/+GrandTotal$+".");
+        System.out.println("The sales tax due is $"+SalesTaxFinal$+".");
+        System.out.println("The grand total is $"+GrandTotal$+".");
         
         //test
         
-        
       
-    }
-}
+    } //close main method
+    
+    
+} //clos class
