@@ -73,4 +73,4 @@ public class Arithmetic{
     } //close main method
     
     
-} //clos class
+} //close class
