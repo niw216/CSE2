@@ -24,7 +24,7 @@ public class BigMac {
     
     //created a scanner in the program, AFTER importing the 
     //necessary "tools" to have scanner available
-    Scanner input = new Scanner(System.in);
+    Scanner myScanner = new Scanner(System.in);
     
     
     //displays text between quotes without cursor returning to next line
@@ -32,20 +32,20 @@ public class BigMac {
     
     //defined integer (literally an integer in the mathematical sense) as 
     //number of big macs, where user can dictate number
-    int nBigMacs = input.nextInt ( );
+    int nBigMacs = myScanner.nextInt ( );
     
     // displays text in quotations
     System.out.print("Enter the cost per Big Mac as " 
         + " a double (in the form of xx.xx):" );
     
     //define double variable for Big Mac price
-    double bigMac$ = input.nextDouble( );
+    double bigMac$ = myScanner.nextDouble( );
     
     //displays text in quotations
     System.out.print("Enter the percent tax as a whole number (xx): ");
     
     //define double for tax rate of area where Big mac is bought
-    double taxRate = input.nextDouble( );
+    double taxRate = myScanner.nextDouble( );
     taxRate/=100; //user will enter tax rate as whole number, so this
                   //accounts for the decimal/percentage
     
