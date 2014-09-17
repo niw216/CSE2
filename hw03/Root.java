@@ -35,8 +35,10 @@ public class Root{
         guess2,
         guess3,
         guess4,
-        guess5;    /*defined variables for all of guessing analysis/computatiion
+        guess5;    /*defined variables for all of guessing analysis/computation
                         done*/
+        
+        //mathematical equations to guess the cube root
         guess= x/3;
         guess1=(2*guess*guess*guess+x)/(3*guess*guess);
         guess2=(2*guess1*guess1*guess1+x)/(3*guess1*guess1);
@@ -45,7 +47,11 @@ public class Root{
         guess5=(2*guess4*guess4*guess4+x)/(3*guess4*guess4);
         
         /*double guess6=(2*guess5*guess5*guess5+x)/(3*guess5*guess5);
-        the line above really increases the precision of the calculation;
+        double guess7=(2*guess6*guess6*guess6+x)/(3*guess6*guess6);
+        double guess8=(2*guess7*guess7*guess7+x)/(3*guess7*guess7);
+        double guess9=(2*guess8*guess8*guess8+x)/(3*guess8*guess8);
+        the lines above increase the precision of the calculation with using
+        more lines in this fashion to achieve greater accuracy;
         however, the assignment only asks for 4 additional guesses after doing
         "guess1".  :( */
         

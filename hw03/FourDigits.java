@@ -30,31 +30,37 @@ public class FourDigits{
         
         //the extraction & isolation of the numbers to the right of the decimal
         int integerDouble,
-            augmentedDouble,
-            correctedDouble,
             tenthsDouble,
             hundredthsDouble,
             thousandthsDouble,
             tenthousandthsDouble;
         double decimalDouble;   //defined variables to get four digits isolated
         
-        integerDouble=(int)_double;
-        decimalDouble=(double)(_double-integerDouble);
-        tenthsDouble=(int)(decimalDouble*10)%10;
-        hundredthsDouble=(int)(decimalDouble*100)%10;
-        thousandthsDouble=(int)(decimalDouble*1000)%10;
-        tenthousandthsDouble=(int)(decimalDouble*10000)%10;
-        augmentedDouble= (int)(decimalDouble*10000);
         
+        integerDouble=(int)_double; /*create variable with numbers before 
+                                        decimal point*/
+        decimalDouble=(double)(_double-integerDouble); /*removes numbers before 
+                                                            decimal point*/
+        tenthsDouble=(int)(decimalDouble*10)%10; /*isolate and store first digit
+                                                    to the right of the decimal*/
+        hundredthsDouble=(int)(decimalDouble*100)%10; /*isolate and store second
+                                                        digit to the right of 
+                                                        the decimal*/
+        thousandthsDouble=(int)(decimalDouble*1000)%10; /*isolate and store third
+                                                            digit to the right 
+                                                            of the decimal*/
+        tenthousandthsDouble=(int)(decimalDouble*10000)%10; /*isolate and store 
+                                                                first digit to 
+                                                                the right of the
+                                                                decimal*/
         
         
         //the display of the double's first four digits to the right of the
         //decimal place.
         System.out.println("The four digits are "+tenthsDouble+hundredthsDouble
-            +thousandthsDouble+tenthousandthsDouble+/*augmentedDouble+*/'.');
-        
-        
-        
-        
+            +thousandthsDouble+tenthousandthsDouble+'.');
+       
+       
     }   //end of main method
+    
 }   //end of class
