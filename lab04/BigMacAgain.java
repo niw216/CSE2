@@ -55,7 +55,7 @@ public class BigMacAgain {
         
        
             //defined variable that allows user to enter Y,y,N, or n for response
-            String YesNoFf =myScanner.next();  
+            String YesNoFf = myScanner.next();  
             
             //displays cost of French fries and adds cost to total bill, given 
             //that the user wants fries
