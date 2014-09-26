@@ -38,14 +38,15 @@ public class BigMacAgain {
     
     
     //displays cost of Big Mac and prompt for user to enter quantity of Big Macs
-    System.out.println("Big Macs cost $"+bigMacPrice+ "each.");
+    System.out.println("Big Macs cost $"+bigMacPrice+ " each.");
     System.out.print("Enter number of Big Macs (an integer > 0): ");
     
-    //defined integer (literally an integer in the mathematical sense) as 
-    //number of big macs, where user can dictate number
-  
-    int nBigMacs = myScanner.nextInt ( );
     
+    if(myScanner.hasNextInt()){
+    
+    
+    //number of big macs, where user can dictate number
+    int nBigMacs = myScanner.nextInt();
     
     //IF STATEMENTS
     
@@ -146,11 +147,18 @@ public class BigMacAgain {
         
         //stops program if user doesn't enter an integer
         else{
-            System.out.println("You did not enter an int");
+            System.out.println("You did not enter an integer > 0.");
             return; //leaves the program (program terminates)
         } //end else statement of big mac if
 
-
+    }   //end if statement for integer true
+    
+    else{
+        
+        System.out.println("You did not enter an integer.");
+        return;
+        
+    }
     }   //end main method
     
 }   //end class
