@@ -116,13 +116,15 @@ public class NumberStack {
                     spaceCounter++;     //increases spacecounter to c
                 }
                 System.out.println(""); //returns end of previous line to next line
-                rowsPrinted++;  //
+                rowsPrinted++;  //increases value by 1 to allow program to move to next row 
             }
-            //FOR DASHES
+            //reset spacecounter value to 1 to allow for dashes to be printed properly
             int spaceCounter = 1;
+            //while loop for printing correct number of spaces
             while (spaceCounter <= 17) {
-                System.out.print(space);
+                System.out.print(space);    //prints the spaces
                 int numberPrinted = stackNumberCounter - 1;
+                    //while loop for printing out correct number of dashes
                     while (((9 - numberPrinted) <= spaceCounter) && (spaceCounter <= (9 + numberPrinted))) {
                         System.out.print('-');
                         spaceCounter++;
@@ -131,17 +133,21 @@ public class NumberStack {
                 spaceCounter++;
             }
             System.out.println("");
-            stackNumberCounter++;
+            stackNumberCounter++;   //increments value to print next number stack
         }   //end while loop
         
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-
+        //displays the following statement
         System.out.println("Using do-while loops:");
         
+        //reset value to 1
         stackNumberCounter = 1;
         
+        //do while loop for number stacks
         do {
+            //variable for printing correct number of rows 
             int rowsPrinted = 0;
+            //do while loop for printing correct number of rows
             do {
                 int spaceCounter = 0; //??? maybe?????
                 int numberPrinted = stackNumberCounter - 1;
@@ -152,19 +158,14 @@ public class NumberStack {
                         spaceCounter++;
                     } while (!((9 - numberPrinted) <= spaceCounter) && (spaceCounter <= (9 + numberPrinted))); 
                         //number printing do while loop
+                        //do while loop for printing correct number of characters
                         do {
                             System.out.print(stackNumberCounter);
                             spaceCounter++;
-                            //boolean printednumbersrange = (!((9 - numberPrinted) > spaceCounter) && (spaceCounter > (9 + numberPrinted)));
-                            //System.out.print(printednumbersrange);
-                            
                         }  while ((((9 - numberPrinted) <= spaceCounter) && (spaceCounter <= (9 + numberPrinted))));
-                    //spaceCounter++;
-                    //System.out.println("");
                     numberPrinted++;
                     spaceCounter++;
                     System.out.println("");
-                    //System.out.println("shit");
             rowsPrinted++;
             } while (rowsPrinted < stackNumberCounter);
         //FOR DASHES
