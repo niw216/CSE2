@@ -113,7 +113,7 @@ public class NumberStack {
                         spaceCounter++; //prevents loop from priting too many numbers per row
                     }
                     numberPrinted++;    //increment allow for correct number of characters per row
-                    spaceCounter++;     //increases spacecounter to c
+                    spaceCounter++;     //increases spacecounter to allow for correct number of spaces
                 }
                 System.out.println(""); //returns end of previous line to next line
                 rowsPrinted++;  //increases value by 1 to allow program to move to next row 
@@ -129,8 +129,8 @@ public class NumberStack {
                         System.out.print('-');
                         spaceCounter++;
                     }
-                numberPrinted++;
-                spaceCounter++;
+                numberPrinted++; //increment allow for correct number of characters per row
+                spaceCounter++; //increases spacecounter to allow for correct number of spaces
             }
             System.out.println("");
             stackNumberCounter++;   //increments value to print next number stack
@@ -163,26 +163,27 @@ public class NumberStack {
                             System.out.print(stackNumberCounter);
                             spaceCounter++;
                         }  while ((((9 - numberPrinted) <= spaceCounter) && (spaceCounter <= (9 + numberPrinted))));
-                    numberPrinted++;
-                    spaceCounter++;
+                    numberPrinted++;    //see previous comment on numberPrinted++ 
+                    spaceCounter++;     //increases spacecounter to allow for correct number of spaces
                     System.out.println("");
             rowsPrinted++;
             } while (rowsPrinted < stackNumberCounter);
         //FOR DASHES
             int spaceCounter = 0;
             int numberPrinted = stackNumberCounter - 1;
+            //prints the correct number of spaces
             do {
                 System.out.print(space);
-                spaceCounter++;
+                spaceCounter++; //see previous comments on this statement
             } while (!((9 - numberPrinted) <= spaceCounter) && (spaceCounter <= (9 + numberPrinted)));
                 do {
                     System.out.print('-');
-                    spaceCounter++;
+                    spaceCounter++; //see previous comments
                 } while (((9 - numberPrinted) <= spaceCounter) && (spaceCounter <= (9 + numberPrinted)));
             System.out.println("");
-            numberPrinted++;
-            spaceCounter++;
-            stackNumberCounter++;
+            numberPrinted++;    //increment allow for correct number of characters per row
+            spaceCounter++;     //see previous comments
+            stackNumberCounter++;   //see previous comments
         } while (stackNumberCounter <= inputtedNumber);
 
     } //end main method
