@@ -5,8 +5,7 @@
 //description of program
     /*This program takes double arrays and uses the method addArrays to sum the
     two, equals to see if each array is equal in value and size to each other, and
-    display to show the arrays.
-    */
+    display to show the arrays.*/
     
     
 //import scanner
